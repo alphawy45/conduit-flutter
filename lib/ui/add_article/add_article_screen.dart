@@ -346,11 +346,11 @@ class _AddArticleScreenState extends State<AddArticleScreen> {
                                     child: isVisible
                                         ? Icon(
                                             Icons.close,
-                                            color: AppColors.pholder_background,
+                                            color: AppColors.placeHolder_background,
                                           )
                                         : Icon(
                                             Icons.info_outline,
-                                            color: AppColors.pholder_background,
+                                            color: AppColors.placeHolder_background,
                                           ),
                                   ),
                                 ),

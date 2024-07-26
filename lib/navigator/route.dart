@@ -19,7 +19,7 @@ import 'package:conduit/ui/add_article/add_article_screen.dart';
 import 'package:conduit/ui/base/base_screen.dart';
 import 'package:conduit/ui/change_password/change_password_screen.dart';
 import 'package:conduit/ui/comments/comments_screen.dart';
-import 'package:conduit/ui/feed/yourfeed.dart';
+import 'package:conduit/ui/feed/yourfeed.dart';   // cspell:disable-line
 import 'package:conduit/ui/global/global.dart';
 import 'package:conduit/ui/global/global_item_detail_screen.dart';
 import 'package:conduit/ui/login/login_screen.dart';

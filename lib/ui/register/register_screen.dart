@@ -189,7 +189,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             }
                           }
                         },
-                        currentInde: _currentStep,
+                        currIdx: _currentStep,
                       ),
                       SizedBox(
                         height: 20,
@@ -343,7 +343,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   child: Text('Next',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .button
+                                          .labelLarge    // .button
                                           ?.copyWith(
                                               color: isLoading
                                                   ? Colors.white60
@@ -452,7 +452,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   child: Text('Sign Up',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .button
+                                          .labelLarge    //.button
                                           ?.copyWith(
                                               color: isLoading
                                                   ? Colors.white60

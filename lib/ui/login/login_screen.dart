@@ -286,7 +286,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               'Sign in',
                               style: Theme.of(context)
                                   .textTheme
-                                  .button
+                                  .labelLarge  //.button
                                   ?.copyWith(
                                       color: isLoading
                                           ? Colors.white60

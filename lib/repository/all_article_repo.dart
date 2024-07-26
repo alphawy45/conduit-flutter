@@ -372,7 +372,7 @@ class AllArticlesImpl extends AllArticlesRepo {
       Uri.parse(url),
       headers: {
         "content-type": "application/json",
-        "Authorization": "Bearer ${detailModel!.values.first.token}"
+        "Authorization": "Token ${detailModel!.values.first.token}"
       },
     );
     // print(response.body);
@@ -404,7 +404,7 @@ class AllArticlesImpl extends AllArticlesRepo {
       Uri.parse(url),
       headers: {
         "content-type": "application/json",
-        "Authorization": "Bearer ${detailModel!.values.first.token}"
+        "Authorization": "Token ${detailModel!.values.first.token}"
       },
     );
     // print(response.body);

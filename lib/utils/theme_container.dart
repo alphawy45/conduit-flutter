@@ -2,6 +2,7 @@ import 'package:conduit/utils/AppColors.dart';
 import 'package:conduit/utils/responsive.dart';
 import 'package:flutter/material.dart';
 
+// cspell:ignore ARGB
 class ThemeContainer extends StatelessWidget {
   ThemeContainer({
     Key? key,
@@ -50,8 +51,8 @@ class ThemeContainer extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(
                   top: 30,
-                  left: screenSize.width / 3,
-                  right: screenSize.width / 3,
+                  // left: screenSize.width / 3,
+                  // right: screenSize.width / 3,
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,

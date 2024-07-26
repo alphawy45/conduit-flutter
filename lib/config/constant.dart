@@ -5,7 +5,8 @@ class ApiConstant {
 
   // static const WEBSITE_OF_THIS_APP = "https://demo.realworld.io/#/";
 
-  /*#1*/ static const BASE_URL = "https://api.realworld.io";
+  // /*#1*/ static const BASE_URL = "https://api.realworld.io";
+  /*#1*/ static const BASE_URL = "http://localhost:8080";
   /*#2*/ static const SUB_URL = "/api";
 
   /*#3*/ static const LOGIN = BASE_URL + SUB_URL + "/users/login";
@@ -29,6 +30,7 @@ class ApiConstant {
   /*#20*/ static const ARTICLE_BY_TAG = BASE_URL + SUB_URL + "/articles?tag=";
 
   static const TOKEN =
+  // cspell:disable-next-line
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpheWRlZXBwcEBtYWlsaW5hdG9yLmNvbSIsInVzZXJuYW1lIjoiSmF5ZGVlcHBwIiwiaWF0IjoxNjg0NDk2NTY1LCJleHAiOjE2ODk2ODA1NjV9.TAKbvNlhVw0Qu4P7cuJ3H9shzwKp5QvpRrMUP8P93M0";
 }
 

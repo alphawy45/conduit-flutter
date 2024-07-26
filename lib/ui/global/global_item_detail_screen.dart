@@ -1182,7 +1182,7 @@ class _GlobalItemDetailScreenState extends State<GlobalItemDetailScreen> {
                 padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
                 child: Text(
                   "Are you sure you want to delete the article?",
-                  style: Theme.of(context).textTheme.bodyText2?.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: AppColors.white,
                         fontWeight: FontWeight.w800,
                       ),
@@ -1196,7 +1196,7 @@ class _GlobalItemDetailScreenState extends State<GlobalItemDetailScreen> {
                       child: MaterialButton(
                         height: 40,
                         color: AppColors.white,
-                        disabledColor: AppColors.pholder_background,
+                        disabledColor: AppColors.placeHolder_background,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
@@ -1204,7 +1204,7 @@ class _GlobalItemDetailScreenState extends State<GlobalItemDetailScreen> {
                           'Cancel',
                           style: Theme.of(context)
                               .textTheme
-                              .button
+                              .labelLarge   // .button
                               ?.copyWith(
                                 fontFamily: ConduitFontFamily.robotoRegular,
                               )
@@ -1230,7 +1230,7 @@ class _GlobalItemDetailScreenState extends State<GlobalItemDetailScreen> {
                           'Confirm',
                           style: Theme.of(context)
                               .textTheme
-                              .button
+                              .labelLarge
                               ?.copyWith(
                                 fontFamily: ConduitFontFamily.robotoRegular,
                               )

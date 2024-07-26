@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import '../utils/AppColors.dart';
 
 class ConduitStepper extends StatefulWidget {
-  final int currentInde;
+  final int currIdx;
   void Function(int index) onTap;
 
-  ConduitStepper({Key? key, this.currentInde = 0, required this.onTap})
+  ConduitStepper({Key? key, this.currIdx = 0, required this.onTap})
       : super(key: key);
 
   @override
@@ -31,14 +31,14 @@ class _ConduitStepperState extends State<ConduitStepper> {
                 widget.onTap(0);
               },
               child: CircleAvatar(
-                backgroundColor: widget.currentInde == 0
+                backgroundColor: widget.currIdx == 0
                     ? AppColors.primaryColor
-                    : AppColors.steeprDisableColor,
+                    : AppColors.steeperDisableColor,
                 child: Text("1",
                     style: TextStyle(
-                        color: widget.currentInde == 0
+                        color: widget.currIdx == 0
                             ? Colors.white
-                            : AppColors.steeprDisableTextColor,
+                            : AppColors.steeperDisableTextColor,
                         fontFamily: ConduitFontFamily.robotoMedium)),
               ),
             ),
@@ -46,7 +46,7 @@ class _ConduitStepperState extends State<ConduitStepper> {
               child: Align(
                 alignment: Alignment.center,
                 child: Divider(
-                  color: AppColors.steeprDisableColor,
+                  color: AppColors.steeperDisableColor,
                   thickness: 3,
                 ),
               ),
@@ -57,15 +57,15 @@ class _ConduitStepperState extends State<ConduitStepper> {
                 widget.onTap(1);
               },
               child: CircleAvatar(
-                backgroundColor: widget.currentInde == 1
+                backgroundColor: widget.currIdx == 1
                     ? AppColors.primaryColor
-                    : AppColors.steeprDisableColor,
+                    : AppColors.steeperDisableColor,
                 child: Text(
                   "2",
                   style: TextStyle(
-                    color: widget.currentInde == 1
+                    color: widget.currIdx == 1
                         ? Colors.white
-                        : AppColors.steeprDisableTextColor,
+                        : AppColors.steeperDisableTextColor,
                     fontFamily: ConduitFontFamily.robotoMedium,
                   ),
                 ),

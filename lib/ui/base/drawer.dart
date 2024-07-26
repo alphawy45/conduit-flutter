@@ -10,6 +10,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+// cspell:ignore bottionnavigationbar, roboto, ARGB
 class ConduitDrawer extends StatelessWidget {
   const ConduitDrawer({Key? key}) : super(key: key);
 
@@ -181,7 +182,7 @@ class ConduitDrawer extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
                   child: Text(
                     "Are you sure you want to sign out ?",
-                    style: Theme.of(context).textTheme.bodyText2?.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: AppColors.white,
                           fontFamily: ConduitFontFamily.robotoThin,
                           fontWeight: FontWeight.w800,
@@ -196,13 +197,13 @@ class ConduitDrawer extends StatelessWidget {
                         child: MaterialButton(
                             height: 40,
                             color: const Color.fromARGB(255, 50, 48, 48),
-                            disabledColor: AppColors.pholder_background,
+                            disabledColor: AppColors.placeHolder_background,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10.0)),
                             child: new Text('Cancel',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .button
+                                    .labelLarge   // .button
                                     ?.copyWith(
                                       fontFamily:
                                           ConduitFontFamily.robotoRegular,
@@ -225,7 +226,7 @@ class ConduitDrawer extends StatelessWidget {
                           child: new Text('Confirm',
                               style: Theme.of(context)
                                   .textTheme
-                                  .button
+                                  .labelLarge   // .button
                                   ?.copyWith(
                                     fontFamily: ConduitFontFamily.robotoRegular,
                                   )

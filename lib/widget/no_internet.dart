@@ -2,6 +2,7 @@ import 'package:conduit/main.dart';
 import 'package:conduit/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 
+// cspell: ignore conexion
 class NoInternet extends StatelessWidget {
   NoInternet({Key? key, this.isWidget = false, this.onClickRetry})
       : super(key: key);
@@ -47,7 +48,8 @@ class NoInternet extends StatelessWidget {
                     side: BorderSide(color: AppColors.primaryColor),
                     borderRadius: BorderRadius.circular(12.0)),
                 child: Text("Retry",
-                    style: Theme.of(context).textTheme.button?.copyWith(
+                    style: Theme.of(context).textTheme.labelLarge?.  //.button
+                    copyWith(
                         fontFamily: ConduitFontFamily.robotoBold,
                         color: Colors.black,
                         fontWeight: FontWeight.w700)),
@@ -98,7 +100,8 @@ class NoInternet extends StatelessWidget {
                     side: BorderSide(color: AppColors.primaryColor),
                     borderRadius: BorderRadius.circular(12.0)),
                 child: Text("Retry",
-                    style: Theme.of(context).textTheme.button?.copyWith(
+                    style: Theme.of(context).textTheme.labelLarge?.  //.button
+                    copyWith(
                         fontFamily: ConduitFontFamily.robotoBold,
                         color: Colors.black,
                         fontWeight: FontWeight.w700)),

@@ -84,10 +84,10 @@ class _ConduitEditTextState extends State<ConduitEditText> {
             prefixIcon: widget.prefixIcon,
             errorStyle: Theme.of(context)
                 .textTheme
-                .caption
+                .bodySmall   //.caption
                 ?.copyWith(color: Colors.red),
-            helperStyle: Theme.of(context).textTheme.subtitle1,
-            hintStyle: Theme.of(context).textTheme.caption,
+            helperStyle: Theme.of(context).textTheme.titleMedium,   //.subtitle1
+            hintStyle: Theme.of(context).textTheme.bodySmall,   //.caption
             hintText: widget.hint,
             filled: true,
             contentPadding: EdgeInsets.only(left: 10, right: 10, top: 10),
@@ -194,9 +194,10 @@ class _ConduitSearchEditTextState extends State<ConduitSearchEditText> {
           prefixIcon: widget.prefixIcon,
           fillColor: AppColors.white,
           errorStyle:
-              Theme.of(context).textTheme.caption?.copyWith(color: Colors.red),
-          helperStyle: Theme.of(context).textTheme.subtitle1,
-          hintStyle: Theme.of(context).textTheme.caption,
+              Theme.of(context).textTheme.bodySmall?.  // .caption
+              copyWith(color: Colors.red),
+          helperStyle: Theme.of(context).textTheme.titleMedium,  //.subtitle1
+          hintStyle: Theme.of(context).textTheme.bodySmall,  //.caption
           hintText: widget.hint,
           filled: true,
           contentPadding: EdgeInsets.only(left: 10, right: 10, top: 10),

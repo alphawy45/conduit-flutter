@@ -23,7 +23,7 @@ class UserClient {
     }
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
     if (header != null) {
       head.addAll(header);
@@ -39,7 +39,7 @@ class UserClient {
     }
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
     if (header != null) {
       head.addAll(header);
@@ -68,7 +68,7 @@ class UserClient {
     }
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
     if (header != null) {
       head.addAll(header);
@@ -86,7 +86,7 @@ class UserClient {
 
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
 
     if (header != null) {
@@ -133,7 +133,7 @@ class UserClient {
 
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
 
     if (header != null) {
@@ -179,7 +179,7 @@ class UserClient {
 
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
 
     if (header != null) {
@@ -218,7 +218,7 @@ class UserClient {
     }
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
 
     if (header != null) {
@@ -236,7 +236,8 @@ class UserClient {
     try {
       http.Response response = await http.put(
         Uri.parse(url),
-        body: jsonEncode(profileModel.toJson()),
+        // body: jsonEncode(profileModel.toJson()),
+        body: jsonEncode(profileModel),
         headers: head,
       );
       // print("profile updated data is =====> ${response.body}");
@@ -252,6 +253,10 @@ class UserClient {
     } on UnAuthorizedException catch (e) {
       hiveStore.clossSession();
       return http.Response('{"message":"${e.message}"}', e.statusCode);
+    // } catch(e, s) {
+    //   print(e);
+    //   print(s);
+    //   rethrow;
     }
   }
 
@@ -264,7 +269,7 @@ class UserClient {
     }
     Map<String, String> head = {
       "content-type": "application/json",
-      "Authorization": "Bearer ${userData.values.last.token}"
+      "Authorization": "Token ${userData.values.last.token}"
     };
     if (header != null) {
       head.addAll(header);
